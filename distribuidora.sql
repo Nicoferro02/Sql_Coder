@@ -1,6 +1,7 @@
 
 -- ELIMINAR BASE DE DATOS SI YA EXISTE Y VOLVERLA A CREAR
 
+
 DROP DATABASE IF EXISTS Distribuidora_Electrica; 
 CREATE DATABASE Distribuidora_Electrica; 
 
