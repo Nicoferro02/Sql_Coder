@@ -3,6 +3,7 @@ Use Distribuidora_Electrica;
 -- Función para calcular el descuento de un total
 
 DELIMITER //
+DROP FUNCTION IF EXISTS calcular_descuento;//
 CREATE FUNCTION calcular_descuento(total DECIMAL(10,2), porcentaje DECIMAL(5,2))
 RETURNS DECIMAL(10,2)
 DETERMINISTIC
@@ -14,6 +15,7 @@ DELIMITER ;
 -- Función para obtener el stock de un producto 
 
 DELIMITER //
+DROP FUNCTION IF EXISTS obtener_stock_producto;//
 CREATE FUNCTION obtener_stock_producto(p_id_producto INT)
 RETURNS INT
 DETERMINISTIC

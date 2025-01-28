@@ -1,5 +1,7 @@
 USE Distribuidora_Electrica;
 
+DROP PROCEDURE IF EXISTS RegistrarPedido;
+
 DELIMITER //
 
 CREATE PROCEDURE RegistrarPedido(

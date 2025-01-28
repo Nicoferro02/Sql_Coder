@@ -1,6 +1,7 @@
 USE Distribuidora_Electrica;
 
 -- Trigger para actualizar el stock al insertar un detalle de pedido
+DROP TRIGGER IF EXISTS actualizar_stock_pedido;
 DELIMITER //
 CREATE TRIGGER actualizar_stock_pedido
 AFTER INSERT ON Distribuidora_Electrica.detalle_de_pedidos
@@ -13,6 +14,7 @@ END//
 DELIMITER ;
 
 -- Trigger para asegurar que el stock no sea negativo al actualizar el producto
+DROP TRIGGER IF EXISTS asegurar_stock;
 DELIMITER //
 CREATE TRIGGER asegurar_stock
 BEFORE UPDATE ON Distribuidora_Electrica.producto
