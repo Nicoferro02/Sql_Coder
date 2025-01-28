@@ -60,5 +60,16 @@ CALL RegistrarPedido(
     '1,2,1'             -- p_cantidades
 );
 
+CALL RegistrarPedido ( 
+    2,
+    3,
+    4000,
+    2,
+    1,
+    '4,1,5',
+    '4,2,5'
+);
+
+
 -- Verificar los datos insertados en la tabla 'pedidos'
 SELECT * FROM pedidos;
